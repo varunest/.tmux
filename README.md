@@ -43,7 +43,7 @@ curl -fsSL "https://github.com/gpakosz/.tmux/raw/refs/heads/master/install.sh#$(
 **Manual installation in `~`**
 ```
 $ cd
-$ git clone --single-branch https://github.com/gpakosz/.tmux.git
+$ git clone --single-branch https://github.com/varunest/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
 ```

@@ -410,6 +410,8 @@ bind m run "cut -c3- '#{TMUX_CONF}' | sh -s _toggle_mouse" \; display 'mouse #{?
 # move status line to top
 #set -g status-position top
 
+# auto open workmux sidebar on new sessions
+set-hook -g session-created 'run-shell -b "workmux sidebar 2>/dev/null || true"'
 
 # -- tpm -----------------------------------------------------------------------
 

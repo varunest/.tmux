@@ -412,7 +412,7 @@ bind m run "cut -c3- '#{TMUX_CONF}' | sh -s _toggle_mouse" \; display 'mouse #{?
 
 # auto open workmux sidebar on new sessions
 set-hook -g session-created 'run-shell -b "workmux sidebar 2>/dev/null || true"'
-
+set-hook -g client-attached 'run-shell -b "workmux sidebar 2>/dev/null || true"'
 # -- tpm -----------------------------------------------------------------------
 
 # while I don't use tpm myself, many people requested official support so here
